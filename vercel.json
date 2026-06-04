@@ -1,7 +1,5 @@
 {
-  "functions": {
-    "api/insight.js": {
-      "runtime": "edge"
-    }
-  }
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/api/$1" }
+  ]
 }
