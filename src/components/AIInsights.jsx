@@ -29,7 +29,7 @@ ${news.slice(0, 5).map(n => `- ${n.title} (${n.source})`).join('\n')}
     `
 
     try {
-      const res = await fetch('https://api.anthropic.com/v1/messages', {
+      const res = await fetch('/api/insight', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
